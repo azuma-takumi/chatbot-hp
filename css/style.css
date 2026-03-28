@@ -1441,6 +1441,20 @@ input, textarea, select {
   40% { transform: translateY(-5px); opacity: 1; }
 }
 
+/* ストリーミング中のメッセージ（カーソル点滅） */
+.chat-message--streaming .chat-message__text::after {
+  content: '▋';
+  display: inline-block;
+  animation: cursorBlink 0.7s ease-in-out infinite;
+  color: var(--color-primary);
+  margin-left: 2px;
+}
+
+@keyframes cursorBlink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
 /* チャットフッター（入力欄） */
 .chatbot__footer {
   padding: var(--space-md);
