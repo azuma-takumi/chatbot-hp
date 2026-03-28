@@ -44,7 +44,7 @@ app.post('/api/chat', async (req, res) => {
            try {
                   // Claude API にストリーミングリクエスト
        const stream = await anthropic.messages.stream({
-                model: 'claude-opus-4-5',
+                      model: 'claude-3-5-sonnet-20241022',
                 max_tokens: 1024,
                 system: `あなたは株式会社サンプルのカスタマーサポートAIアシスタントです。
                 当社はIT・Web・システム開発を専門とする企業で、BtoB・BtoCの両方のお客様にサービスを提供しています。
