@@ -7,7 +7,7 @@
 // 会話履歴（Claude API に送る形式で保持）
 let conversationHistory = [];
 
-// チャットボットが処理中かどうかのフラグ
+// チャットボットが処理中かどうかのフラ
 let isProcessing = false;
 
 // DOM読み込み完了後に実行
@@ -20,16 +20,16 @@ document.addEventListener('DOMContentLoaded', () => {
    ------------------------------------------ */
 function initChatbot() {
      const trigger = document.getElementById('chatbotTrigger');
-     const widget = document.getElementById('chatbotWindow');
+    const chatbot = document.getElementById('chatbot');
      const closeBtn = document.getElementById('chatbotClose');
      const input = document.getElementById('chatbotInput');
      const sendBtn = document.getElementById('chatbotSend');
 
-  if (!trigger || !widget) return;
+      if (!trigger || !chatbot) return;
 
   // トリガーボタンクリックでウィジェット開閉
   trigger.addEventListener('click', () => {
-         const isOpen = widget.classList.toggle('open');
+                 const isOpen = chatbot.classList.toggle('open');
          trigger.setAttribute('aria-label', isOpen ? 'チャットを閉じる' : 'チャットを開く');
 
                                // 初回オープン時にウェルカムメッセージを表示
@@ -45,7 +45,7 @@ function initChatbot() {
 
   // 閉じるボタン
   closeBtn && closeBtn.addEventListener('click', () => {
-         widget.classList.remove('open');
+                 chatbot.classList.remove('open');
          trigger.setAttribute('aria-label', 'チャットを開く');
   });
 
