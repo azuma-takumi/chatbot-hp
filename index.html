@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>株式会社サンプル | ITソリューションで未来を拓く</title>
+  <meta name="description" content="株式会社サンプルは、Webシステム開発・DX推進・クラウド導入支援を通じて、企業の成長をサポートします。" />
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ========================================
+       ナビゲーション
+  ======================================== -->
+  <header class="header" id="header">
+    <nav class="nav">
+      <a href="#" class="nav__logo">
+        <span class="nav__logo-icon">◈</span>
+        株式会社サンプル
+      </a>
+      <!-- デスクトップメニュー -->
+      <ul class="nav__menu" id="navMenu">
+        <li><a href="#services" class="nav__link">サービス</a></li>
+        <li><a href="#results" class="nav__link">実績</a></li>
+        <li><a href="#testimonials" class="nav__link">お客様の声</a></li>
+        <li><a href="#team" class="nav__link">チーム</a></li>
+        <li><a href="#contact" class="nav__link nav__link--cta">お問い合わせ</a></li>
+      </ul>
+      <!-- ハンバーガーボタン（スマホ用） -->
+      <button class="nav__hamburger" id="hamburger" aria-label="メニューを開く">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ========================================
+         ヒーローセクション
+    ======================================== -->
+    <section class="hero" id="hero">
+      <div class="hero__bg-shapes">
+        <div class="hero__shape hero__shape--1"></div>
+        <div class="hero__shape hero__shape--2"></div>
+        <div class="hero__shape hero__shape--3"></div>
+      </div>
+      <div class="container hero__content">
+        <div class="hero__text fade-in">
+          <span class="hero__badge">IT × Innovation</span>
+          <h1 class="hero__title">
+            テクノロジーで、<br />
+            <span class="hero__title--accent">ビジネスの可能性</span>を<br />
+            最大化する。
+          </h1>
+          <p class="hero__desc">
+            Webシステム開発・DX推進・クラウド導入支援を通じて、<br class="pc-only" />
+            中小企業から大企業まで、貴社の成長を全力でサポートします。
+          </p>
+          <div class="hero__buttons">
+            <a href="#contact" class="btn btn--primary">無料相談はこちら</a>
+            <a href="#services" class="btn btn--outline">サービスを見る</a>
+          </div>
+        </div>
+        <div class="hero__visual fade-in fade-in--delay">
+          <div class="hero__card-group">
+            <div class="hero__card">
+              <div class="hero__card-icon">🚀</div>
+              <div class="hero__card-text">スピーディな開発</div>
+            </div>
+            <div class="hero__card hero__card--offset">
+              <div class="hero__card-icon">🔒</div>
+              <div class="hero__card-text">セキュアな設計</div>
+            </div>
+            <div class="hero__card">
+              <div class="hero__card-icon">📊</div>
+              <div class="hero__card-text">データ活用支援</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- スクロール誘導 -->
+      <a href="#services" class="hero__scroll-hint">
+        <span>スクロール</span>
+        <div class="hero__scroll-arrow"></div>
+      </a>
+    </section>
+
+    <!-- ========================================
+         サービス紹介セクション
+    ======================================== -->
+    <section class="services section" id="services">
+      <div class="container">
+        <div class="section-header fade-in">
+          <span class="section-label">Services</span>
+          <h2 class="section-title">提供サービス</h2>
+          <p class="section-desc">貴社の課題に合わせた最適なITソリューションをご提案します。</p>
+        </div>
+        <div class="services__grid">
+
+          <!-- サービスカード1 -->
+          <div class="service-card fade-in">
+            <div class="service-card__icon-wrap service-card__icon-wrap--blue">
+              <span class="service-card__icon">💻</span>
+            </div>
+            <h3 class="service-card__title">Webシステム開発</h3>
+            <p class="service-card__desc">
+              要件定義から設計・開発・保守まで一貫対応。ビジネスニーズに合わせたカスタムシステムを構築します。
+            </p>
+            <ul class="service-card__list">
+              <li>業務管理システム</li>
+              <li>ECサイト構築</li>
+              <li>API開発・連携</li>
+            </ul>
+            <a href="#contact" class="service-card__link">詳しく見る →</a>
+          </div>
+
+          <!-- サービスカード2 -->
+          <div class="service-card fade-in">
+            <div class="service-card__icon-wrap service-card__icon-wrap--navy">
+              <span class="service-card__icon">⚡</span>
+            </div>
+            <h3 class="service-card__title">DX推進支援</h3>
+            <p class="service-card__desc">
+              業務のデジタル化・自動化を推進し、人的コストの削減と生産性向上を実現します。
+            </p>
+            <ul class="service-card__list">
+              <li>業務フロー分析・改善</li>
+              <li>RPA・自動化ツール導入</li>
+              <li>社内DX研修</li>
+            </ul>
+            <a href="#contact" class="service-card__link">詳しく見る →</a>
+          </div>
+
+          <!-- サービスカード3 -->
+          <div class="service-card fade-in">
+            <div class="service-card__icon-wrap service-card__icon-wrap--cyan">
+              <span class="service-card__icon">☁️</span>
+            </div>
+            <h3 class="service-card__title">クラウド導入支援</h3>
+            <p class="service-card__desc">
+              AWS・Google Cloud・Azureの導入設計から運用まで。安全・スケーラブルなクラウド環境を構築します。
+            </p>
+            <ul class="service-card__list">
+              <li>クラウド移行計画</li>
+              <li>インフラ設計・構築</li>
+              <li>コスト最適化</li>
+            </ul>
+            <a href="#contact" class="service-card__link">詳しく見る →</a>
+          </div>
+
+          <!-- サービスカード4 -->
+          <div class="service-card fade-in">
+            <div class="service-card__icon-wrap service-card__icon-wrap--indigo">
+              <span class="service-card__icon">📱</span>
+            </div>
+            <h3 class="service-card__title">スマホアプリ開発</h3>
+            <p class="service-card__desc">
+              iOS・Android両対応のモバイルアプリを開発。ユーザー体験を重視したUI/UX設計で競争力を高めます。
+            </p>
+            <ul class="service-card__list">
+              <li>ネイティブアプリ開発</li>
+              <li>React Native対応</li>
+              <li>アプリ保守・アップデート</li>
+            </ul>
+            <a href="#contact" class="service-card__link">詳しく見る →</a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================
+         実績・数字セクション
+    ======================================== -->
+    <section class="results section" id="results">
+      <div class="results__bg"></div>
+      <div class="container">
+        <div class="section-header section-header--light fade-in">
+          <span class="section-label section-label--light">Results</span>
+          <h2 class="section-title section-title--light">数字が証明する実績</h2>
+          <p class="section-desc section-desc--light">お客様との信頼を積み重ねてきた結果です。</p>
+        </div>
+        <div class="results__grid">
+          <div class="result-item fade-in">
+            <div class="result-item__number">
+              <span class="count" data-target="150">0</span>
+              <span class="result-item__unit">社+</span>
+            </div>
+            <div class="result-item__label">導入・契約実績</div>
+            <div class="result-item__sub">設立以来の累計</div>
+          </div>
+          <div class="result-item fade-in">
+            <div class="result-item__number">
+              <span class="count" data-target="98">0</span>
+              <span class="result-item__unit">%</span>
+            </div>
+            <div class="result-item__label">顧客満足度</div>
+            <div class="result-item__sub">2024年度アンケート結果</div>
+          </div>
+          <div class="result-item fade-in">
+            <div class="result-item__number">
+              <span class="count" data-target="10">0</span>
+              <span class="result-item__unit">年</span>
+            </div>
+            <div class="result-item__label">設立からの実績</div>
+            <div class="result-item__sub">豊富な経験と信頼</div>
+          </div>
+          <div class="result-item fade-in">
+            <div class="result-item__number">
+              <span class="count" data-target="300">0</span>
+              <span class="result-item__unit">件+</span>
+            </div>
+            <div class="result-item__label">累計開発プロジェクト</div>
+            <div class="result-item__sub">多様な業種に対応</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================
+         お客様の声セクション
+    ======================================== -->
+    <section class="testimonials section" id="testimonials">
+      <div class="container">
+        <div class="section-header fade-in">
+          <span class="section-label">Testimonials</span>
+          <h2 class="section-title">お客様の声</h2>
+          <p class="section-desc">導入いただいたお客様からのリアルな声をご紹介します。</p>
+        </div>
+        <div class="testimonials__grid">
+
+          <!-- お客様の声1 -->
+          <div class="testimonial-card fade-in">
+            <div class="testimonial-card__stars">★★★★★</div>
+            <p class="testimonial-card__text">
+              「業務管理システムの刷新により、毎月20時間以上かかっていた集計作業が自動化されました。スタッフが本来の業務に集中できるようになり、生産性が大幅に向上しています。」
+            </p>
+            <div class="testimonial-card__author">
+              <div class="testimonial-card__avatar">T</div>
+              <div>
+                <div class="testimonial-card__name">田中 様</div>
+                <div class="testimonial-card__company">製造業 / 総務部長</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- お客様の声2 -->
+          <div class="testimonial-card fade-in">
+            <div class="testimonial-card__stars">★★★★★</div>
+            <p class="testimonial-card__text">
+              「クラウド移行で初年度からサーバーコストを40%削減。セキュリティも強化され、リモートワークへの対応もスムーズになりました。提案から実装まで丁寧にサポートしていただきました。」
+            </p>
+            <div class="testimonial-card__author">
+              <div class="testimonial-card__avatar">S</div>
+              <div>
+                <div class="testimonial-card__name">鈴木 様</div>
+                <div class="testimonial-card__company">IT企業 / 情報システム部</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- お客様の声3 -->
+          <div class="testimonial-card fade-in">
+            <div class="testimonial-card__stars">★★★★★</div>
+            <p class="testimonial-card__text">
+              「スマホアプリ開発をお願いしましたが、デザインから機能まで私たちのイメージ通りに仕上げてくれました。リリース後もすぐに対応いただけるので安心して運用できています。」
+            </p>
+            <div class="testimonial-card__author">
+              <div class="testimonial-card__avatar">Y</div>
+              <div>
+                <div class="testimonial-card__name">山田 様</div>
+                <div class="testimonial-card__company">小売業 / 代表取締役</div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================
+         チーム紹介セクション
+    ======================================== -->
+    <section class="team section" id="team">
+      <div class="container">
+        <div class="section-header fade-in">
+          <span class="section-label">Team</span>
+          <h2 class="section-title">チーム紹介</h2>
+          <p class="section-desc">お客様のビジネス成長を支えるプロフェッショナルたちです。</p>
+        </div>
+        <div class="team__grid">
+
+          <!-- メンバー1 -->
+          <div class="team-card fade-in">
+            <div class="team-card__avatar-wrap">
+              <div class="team-card__avatar">代</div>
+            </div>
+            <h3 class="team-card__name">山本 太郎</h3>
+            <div class="team-card__role">代表取締役 CEO</div>
+            <p class="team-card__bio">
+              大手SIerでのシステム開発経験を経て創業。「技術でお客様の課題を解決する」を信念に、15年のIT業界キャリアを持つ。
+            </p>
+            <div class="team-card__skills">
+              <span class="skill-tag">戦略立案</span>
+              <span class="skill-tag">PM</span>
+              <span class="skill-tag">DX推進</span>
+            </div>
+          </div>
+
+          <!-- メンバー2 -->
+          <div class="team-card fade-in">
+            <div class="team-card__avatar-wrap">
+              <div class="team-card__avatar">技</div>
+            </div>
+            <h3 class="team-card__name">佐藤 花子</h3>
+            <div class="team-card__role">技術責任者 CTO</div>
+            <p class="team-card__bio">
+              フルスタックエンジニアとして100件以上の開発実績。最新技術のキャッチアップを怠らず、品質の高いシステムを提供し続ける。
+            </p>
+            <div class="team-card__skills">
+              <span class="skill-tag">フルスタック</span>
+              <span class="skill-tag">AWS</span>
+              <span class="skill-tag">設計</span>
+            </div>
+          </div>
+
+          <!-- メンバー3 -->
+          <div class="team-card fade-in">
+            <div class="team-card__avatar-wrap">
+              <div class="team-card__avatar">営</div>
+            </div>
+            <h3 class="team-card__name">田中 健二</h3>
+            <div class="team-card__role">営業・コンサルタント</div>
+            <p class="team-card__bio">
+              お客様のビジネス課題をヒアリングし、最適なITソリューションを提案。技術と経営の両面から伴走します。
+            </p>
+            <div class="team-card__skills">
+              <span class="skill-tag">ITコンサル</span>
+              <span class="skill-tag">提案</span>
+              <span class="skill-tag">要件定義</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================
+         CTAバナーセクション
+    ======================================== -->
+    <section class="cta-banner section">
+      <div class="cta-banner__bg"></div>
+      <div class="container cta-banner__content fade-in">
+        <h2 class="cta-banner__title">まずは無料相談から<br />はじめましょう。</h2>
+        <p class="cta-banner__desc">
+          お客様の課題をお聞かせください。最適なITソリューションをご提案します。<br />
+          お気軽にお問い合わせください。
+        </p>
+        <a href="#contact" class="btn btn--white">無料相談を申し込む</a>
+      </div>
+    </section>
+
+    <!-- ========================================
+         お問い合わせセクション
+    ======================================== -->
+    <section class="contact section" id="contact">
+      <div class="container">
+        <div class="section-header fade-in">
+          <span class="section-label">Contact</span>
+          <h2 class="section-title">お問い合わせ</h2>
+          <p class="section-desc">ご質問・ご相談はお気軽にどうぞ。担当者より2営業日以内にご連絡いたします。</p>
+        </div>
+        <div class="contact__wrapper">
+          <!-- お問い合わせ情報 -->
+          <div class="contact__info fade-in">
+            <div class="contact__info-item">
+              <span class="contact__info-icon">📍</span>
+              <div>
+                <div class="contact__info-label">所在地</div>
+                <div class="contact__info-value">〒000-0000<br />東京都○○区○○1-2-3</div>
+              </div>
+            </div>
+            <div class="contact__info-item">
+              <span class="contact__info-icon">📧</span>
+              <div>
+                <div class="contact__info-label">メール</div>
+                <div class="contact__info-value">info@sample-corp.jp</div>
+              </div>
+            </div>
+            <div class="contact__info-item">
+              <span class="contact__info-icon">📞</span>
+              <div>
+                <div class="contact__info-label">電話</div>
+                <div class="contact__info-value">03-0000-0000<br /><small>平日 9:00〜18:00</small></div>
+              </div>
+            </div>
+          </div>
+          <!-- お問い合わせフォーム -->
+          <form class="contact__form fade-in" id="contactForm" novalidate>
+            <div class="form-group">
+              <label class="form-label" for="name">お名前 <span class="form-required">必須</span></label>
+              <input class="form-input" type="text" id="name" name="name" placeholder="山田 太郎" required />
+              <span class="form-error" id="nameError"></span>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="company">会社名</label>
+              <input class="form-input" type="text" id="company" name="company" placeholder="株式会社○○" />
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="email">メールアドレス <span class="form-required">必須</span></label>
+              <input class="form-input" type="email" id="email" name="email" placeholder="info@example.com" required />
+              <span class="form-error" id="emailError"></span>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="category">お問い合わせ種別</label>
+              <select class="form-select" id="category" name="category">
+                <option value="">選択してください</option>
+                <option value="web">Webシステム開発</option>
+                <option value="dx">DX推進支援</option>
+                <option value="cloud">クラウド導入支援</option>
+                <option value="app">スマホアプリ開発</option>
+                <option value="other">その他</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="message">お問い合わせ内容 <span class="form-required">必須</span></label>
+              <textarea class="form-textarea" id="message" name="message" rows="5" placeholder="ご相談内容をご記入ください" required></textarea>
+              <span class="form-error" id="messageError"></span>
+            </div>
+            <button type="submit" class="btn btn--primary btn--full">送信する</button>
+            <div class="form-success" id="formSuccess">
+              ✅ お問い合わせを受け付けました。担当者よりご連絡いたします。
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========================================
+       フッター
+  ======================================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__top">
+        <div class="footer__brand">
+          <div class="footer__logo">
+            <span class="nav__logo-icon">◈</span>
+            株式会社サンプル
+          </div>
+          <p class="footer__tagline">テクノロジーで、ビジネスの可能性を最大化する。</p>
+        </div>
+        <div class="footer__links">
+          <div class="footer__links-group">
+            <h4 class="footer__links-title">サービス</h4>
+            <ul>
+              <li><a href="#services">Webシステム開発</a></li>
+              <li><a href="#services">DX推進支援</a></li>
+              <li><a href="#services">クラウド導入支援</a></li>
+              <li><a href="#services">スマホアプリ開発</a></li>
+            </ul>
+          </div>
+          <div class="footer__links-group">
+            <h4 class="footer__links-title">会社情報</h4>
+            <ul>
+              <li><a href="#team">チーム紹介</a></li>
+              <li><a href="#results">実績</a></li>
+              <li><a href="#testimonials">お客様の声</a></li>
+            </ul>
+          </div>
+          <div class="footer__links-group">
+            <h4 class="footer__links-title">お問い合わせ</h4>
+            <ul>
+              <li><a href="#contact">お問い合わせフォーム</a></li>
+              <li><a href="mailto:info@sample-corp.jp">info@sample-corp.jp</a></li>
+              <li><a href="tel:0300000000">03-0000-0000</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p class="footer__copy">© 2024 株式会社サンプル. All Rights Reserved.</p>
+        <div class="footer__legal">
+          <a href="#">プライバシーポリシー</a>
+          <a href="#">利用規約</a>
+          <a href="#">特定商取引法</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========================================
+       チャットボットウィジェット
+  ======================================== -->
+  <div class="chatbot" id="chatbot">
+    <!-- トリガーボタン -->
+    <button class="chatbot__trigger" id="chatbotTrigger" aria-label="チャットを開く">
+      <span class="chatbot__trigger-icon chatbot__trigger-icon--open">💬</span>
+      <span class="chatbot__trigger-icon chatbot__trigger-icon--close">✕</span>
+    </button>
+    <!-- チャットウィンドウ -->
+    <div class="chatbot__window" id="chatbotWindow">
+      <div class="chatbot__header">
+        <div class="chatbot__header-info">
+          <div class="chatbot__avatar">🤖</div>
+          <div>
+            <div class="chatbot__name">サポートBot</div>
+            <div class="chatbot__status">● オンライン</div>
+          </div>
+        </div>
+        <button class="chatbot__close" id="chatbotClose" aria-label="チャットを閉じる">✕</button>
+      </div>
+      <div class="chatbot__body" id="chatbotBody">
+        <!-- メッセージはJSで挿入 -->
+      </div>
+      <div class="chatbot__footer">
+        <div class="chatbot__input-wrap">
+          <input
+            type="text"
+            class="chatbot__input"
+            id="chatbotInput"
+            placeholder="メッセージを入力..."
+            autocomplete="off"
+          />
+          <button class="chatbot__send" id="chatbotSend" aria-label="送信">
+            ➤
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+  <script src="js/chatbot.js"></script>
+</body>
+</html>
